@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .heroContainer {
+        display: flex;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+    }
+
+    h1 {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 25px;
+        text-align: center;
+    }
+
+    input {
+        width: 100%;
+        height: 30px;
+        font-size: 18px;
+        border-radius: 5px;
+        /* outline: none; */
+        border: none;
+    }
+
+    input:focus {
+        outline: none;
+    }
+
+    .but {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .butadd {
+        color: white;
+        background-color: blue;
+        padding: 10px 45px;
+        border: none;
+        border-radius: 30px;
+    }
+
+    .content {
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        background-color: rgba(128, 128, 128, 0.301);
+        padding: 20px 40px;
+    }
+
+    li {
+        list-style-type: decimal;
+    }
+
+    #list-container {
+        font-size: 20px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    }
+
+    .but {
+        padding: 3px 20px;
+        margin-left: 5px;
+    }
+    small{
+        color: red;
+        display: none;
+    }
+</style>
+
+<body>
+
+    <main>
+        <div class="heroContainer">
+            <div class="heroSection">
+                <div class="content">
+                    <h1>To Do - List</h1>
+                    <input id="text" placeholder="Type Something...!">
+                    <div class="but">
+                        <button class="butadd" onclick="add()">Add</button>
+                       
+                    </div>
+                    
+                    <ul id="list-container">
+                        <li>Hello  <button class="butdele" onclick="dele(event)">  Delete</button></li>
+                        
+                    </ul>
+                    <small>Enter the information to save</small>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
